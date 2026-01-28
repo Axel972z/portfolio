@@ -9,9 +9,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Effet de vague animée -->
+
     <div class="wave"></div>
-    <!-- Feuilles tropicales animées -->
+
 <div class="background">
     <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' width='50' height='50'><path d='M50 10 Q60 0 70 10 Q80 20 75 35 Q85 50 70 60 Q60 70 50 75 Q40 70 30 60 Q20 50 25 35 Q30 20 40 15 Q50 10 50 10 Z' fill='%238BC34A' /></svg>"
          alt="Feuille tropicale" class="leaf">
@@ -26,7 +26,6 @@
 </div>
 
 
-    <!-- Navbar -->
     <header>
         <h1>Axel</h1>
         <nav>
@@ -39,9 +38,9 @@
         </nav>
     </header>
 
-    <!-- Contenu principal -->
+
     <main>
-        <!-- Section "À propos" -->
+
         <section id="a-propos" class="section">
             <div class="container">
                 <h2>À propos</h2>
@@ -55,7 +54,6 @@
             </div>
         </section>
 
-        <!-- Projets -->
         <section id="projets" class="section">
             <div class="container">
                 <h2>Projets</h2>
@@ -80,12 +78,11 @@
             </div>
         </section>
 
-        <!-- Modale -->
         <div id="modal" class="modal">
             <span class="close">&times;</span>
             <img class="modal-content" id="modal-image">
         </div>
-        <!-- Section "Compétences" -->
+
         <section id="competences" class="section">
             <div class="container">
                 <h2>Compétences</h2>
@@ -102,7 +99,6 @@
             </div>
         </section>
 
-        <!-- Section "Contacts" -->
         <section id="contacts" class="section">
             <div class="container">
                 <h2>Contacts</h2>
@@ -121,12 +117,10 @@
         form.addEventListener('submit', function(e) {
             e.preventDefault();
 
-            // Récupère les valeurs du formulaire
             const name = form.querySelector('input[type="text"]').value;
             const email = form.querySelector('input[type="email"]').value;
             const message = form.querySelector('textarea').value;
 
-            // Simule l'envoi du formulaire (remplace cette partie par une vraie requête AJAX si tu veux envoyer les données à un serveur)
             fetch('https://formspree.io/f/mnjdwdzb', {
             method: 'POST',
             headers: {
@@ -161,7 +155,6 @@
         </section>
     </main>
 
-    <!-- Pied de page -->
     <footer>
         <div class="container">
             <p>&copy; 2026 Portfolio - Axel Augustine. Tous droits réservés.</p>
@@ -192,7 +185,6 @@
         });
     });
 </script>
-<!-- Feuilles de palmiers animées -->
 <div class="palm-background">
     <div class="palm-leaf leaf-1"></div>
     <div class="palm-leaf leaf-2"></div>
@@ -203,4 +195,5 @@
 
 </body>
 </html>
+
 
